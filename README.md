@@ -55,7 +55,7 @@ As credenciais do banco de dados estão no arquivo `./app/Db/Database.php` e dev
 ## Composer
 Para a aplicação funcionar, é necessário rodar o Composer para que sejam criados os arquivos responsáveis pelo autoload das classes.
 
-Caso não tenha o Composer instalado, baixe pelo site oficial: [https://getcomposer.org/download](https://getcomposer.org/download/)
+Caso não tenha o Composer instalado, baixe pelo site oficial: [Composer](https://getcomposer.org/download/)
 
 Para rodar o composer, basta acessar a pasta do projeto e executar o comando abaixo em seu terminal:
 ```shell
