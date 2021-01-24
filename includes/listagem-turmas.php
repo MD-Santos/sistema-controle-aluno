@@ -51,6 +51,30 @@ $resultados = strlen($resultados) ? $resultados : '<tr>
     </section>
 
     <section>
+        <form method="get" action="">
+            <div class="row my-4">
+                <div class="col">
+                    <label for="">Buscar por nome</label>
+                    <input type="text" name="busca" class="form-control" value="<?=$busca ?>">
+                </div>
+
+                <div class="col">
+                    <label for="">Status</label>
+                    <select name="status" class="form-control">
+                        <option value="">Ativa/Inativa</option>
+                        <option value="s" <?=$filtroStatus == 's' ? 'selected' : '' ?>>Ativa</option>
+                        <option value="n" <?=$filtroStatus == 'n' ? 'selected' : '' ?>>Inativa</option>
+                    </select>                    
+                </div>
+
+                <div class="col d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary">Filtrar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section>
         <table class="table table-responsive-lg bg-light mt-3">
             <thead class="thead-light">
                 <tr>
